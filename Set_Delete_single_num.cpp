@@ -1,6 +1,9 @@
 
 /*
 Delete a single num from Set
+
+Ref: http://www.cplusplus.com/reference/set/multiset/find/
+
 */
 
 // multiset::find
