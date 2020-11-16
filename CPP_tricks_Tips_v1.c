@@ -19,6 +19,7 @@ using namespace std;
 
 int main()
 {
+    // To decrease computation time
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     return 0;
