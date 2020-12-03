@@ -1,7 +1,4 @@
 
-
-
-
 /*
 Syntax:
 
@@ -11,11 +8,7 @@ mutex m;
 m.try_lock()    //<----------------  Non Blocking Call: Return from this if unable to lock
 ----  <Code Block>   -----
 m.unlock()
-
 */
-
-
-
 
 //======================================<Code Block(S)>======================================
 
@@ -61,6 +54,18 @@ int main() {
 	cout << "Count(Lock): " << cnt_lock << endl;
 	return 0;
 }
+
+
+/*
+Run Results:
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ ./a.out 
+Count(Try Lock): 92820
+Count(Lock): 200000
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ ./a.out 
+Count(Try Lock): 89228
+Count(Lock): 200000
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ 
+*/
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++
 /*
