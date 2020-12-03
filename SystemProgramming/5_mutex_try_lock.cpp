@@ -26,22 +26,25 @@ m.unlock()
 
 using namespace std;
 
-int myAmount = 0;
-mutex m;
+int count = 0;
+mutex mtx;
 
-void addMoney() {
-	//m.lock();
-  m.try_lock();
-	++myAmount;
-	m.unlock();
+void increaseCountBy100000Times() {
+	for(int i=0; i<100000; i++) {
+		//if(mtx.lock()) {
+	        if(mtx.try_lock()) {
+			++count;
+			mtx.unlock();
+		}
+	}
 }
 
 int main() {
-	thread t1(addMoney);
-	thread t2(addMoney);
+	thread t1(increaseCountBy100000Times);
+	thread t2(increaseCountBy100000Times);
 	t1.join();
 	t2.join();
-	cout << myAmount << endl;
+	cout << "Count: " << count << endl;
 	return 0;
 }
 
