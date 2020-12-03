@@ -73,7 +73,7 @@ srb-go3@slave-node:~/dev_space/CPP_concurrency$
 
 
 http://www.cplusplus.com/reference/mutex/timed_mutex/try_lock_for/
-
+http://www.cplusplus.com/reference/mutex/timed_mutex/try_lock_until/
 
 https://www.youtube.com/watch?v=x0sHzDyETUc&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=7
 
