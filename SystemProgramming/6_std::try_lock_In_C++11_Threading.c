@@ -46,8 +46,8 @@ void consumeXY () {
 }
 
 int main() {
-	std::thread t1(incrementXY, std::ref(X), std::ref(m1), "X ");
-	std::thread t2(incrementXY, std::ref(Y), std::ref(m2), "Y ");
+	std::thread t1(incrementXY, std::ref(X), std::ref(m1), "X ");    // <------------ NOTE The use of ref()
+	std::thread t2(incrementXY, std::ref(Y), std::ref(m2), "Y ");    // <------------ NOTE The use of ref()
 	std::thread t3(consumeXY);
 
 	t1.join();
