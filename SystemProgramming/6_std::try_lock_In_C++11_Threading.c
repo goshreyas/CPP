@@ -58,6 +58,30 @@ int main() {
 } 
 
 
+/*
+Output:
+
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ g++ -std=c++11 -pthread -g 6_std_try_lock.cpp 
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ ./a.out 
+X Y 1
+1
+XplusY 2
+X 1
+Y 1
+XplusY 4
+X 1
+Y 1
+XplusY 6
+X 1
+Y 1
+XplusY 8
+X 1
+Y 1
+XplusY 10
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ 
+
+*/
+
 //======================================<Code Block(E)>======================================
 
 
