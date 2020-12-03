@@ -11,8 +11,6 @@ m.unlock()
 */
 
 //======================================<Code Block(S)>======================================
-
-
 #include<bits/stdc++.h>
 //#include<thread>
 //#include<mutex>
@@ -58,9 +56,12 @@ int main() {
 
 /*
 Run Results:
+
 srb-go3@slave-node:~/dev_space/CPP_concurrency$ ./a.out 
 Count(Try Lock): 92820
 Count(Lock): 200000
+srb-go3@slave-node:~/dev_space/CPP_concurrency$
+
 srb-go3@slave-node:~/dev_space/CPP_concurrency$ ./a.out 
 Count(Try Lock): 89228
 Count(Lock): 200000
@@ -70,9 +71,9 @@ srb-go3@slave-node:~/dev_space/CPP_concurrency$
 //++++++++++++++++++++++++++++++++++++++++++++++++++
 /*
 Compile & Test:
-#> g++ -std=c++11 -pthread -g mutex.cpp
-#> g++ -std=c++11 -pthread -g mutex.cpp -o mutex.out
-#> ./<binary:a.out/mutex.out>
+#> g++ -std=c++11 -pthread -g mutex_try_lock.cpp
+#> g++ -std=c++11 -pthread -g mutex_try_lock.cpp -o mutex_try_lock.cpp
+#> ./<binary:a.out/mutex_try_lock.out>
 */
 
 
