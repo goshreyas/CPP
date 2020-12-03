@@ -10,6 +10,13 @@ m.unlock()
 
 */
 
+/*
+How does #include <bits/stdc++.h> work in C++?
+Ref:
+- https://stackoverflow.com/questions/25311011/how-does-include-bits-stdc-h-work-in-c
+- https://gcc.gnu.org/onlinedocs/gcc-4.8.0/libstdc++/api/a01541_source.html
+*/
+
 //==================================================================
 
 #include<bits/stdc++.h>
