@@ -4,7 +4,7 @@ Syntax:
 
 #include <mutex>
 mutex m;
-m.lock()
+m.lock()    //<----------------  Blocking Call 
 ----  <Code Block>   -----
 m.unlock()
 
