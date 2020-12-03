@@ -26,25 +26,39 @@ m.unlock()
 
 using namespace std;
 
-int count = 0;
-mutex mtx;
+int cnt_try_lock = 0, cnt_lock = 0;
+mutex mtx1, mtx2;
 
-void increaseCountBy100000Times() {
+void increaseCountBy100000Times_try_lock() {
 	for(int i=0; i<100000; i++) {
-		//if(mtx.lock()) {
-	        if(mtx.try_lock()) {
-			++count;
-			mtx.unlock();
+		if(mtx1.try_lock()) 
+		{
+			++cnt_try_lock;
+			mtx1.unlock();
 		}
 	}
 }
 
+void increaseCountBy100000Times_lock() {
+	for(int i=0; i<100000; i++) {
+		mtx2.lock();
+		++cnt_lock;
+		mtx2.unlock();
+	}
+}
+
+
 int main() {
-	thread t1(increaseCountBy100000Times);
-	thread t2(increaseCountBy100000Times);
-	t1.join();
-	t2.join();
-	cout << "Count: " << count << endl;
+	thread t1_1(increaseCountBy100000Times_try_lock);
+	thread t1_2(increaseCountBy100000Times_try_lock);
+	thread t2_1(increaseCountBy100000Times_lock);
+	thread t2_2(increaseCountBy100000Times_lock);
+	t1_1.join();
+	t1_2.join();
+	t2_1.join();
+	t2_2.join();
+	cout << "Count(Try Lock): " << cnt_try_lock << endl;
+	cout << "Count(Lock): " << cnt_lock << endl;
 	return 0;
 }
 
