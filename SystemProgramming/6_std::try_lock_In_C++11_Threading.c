@@ -29,8 +29,8 @@ void consumeXY () {
 	int useCount = 5;
 	int XplusY = 0;
 	while(1){
-		int lockResult = std::try_lock(m1,m2);
-		if(lockResult == -1){
+		int lockResult = std::try_lock(m1,m2);  // <---------------------- NOTE How to Use
+		if(lockResult == -1) {  // <---------------------- NOTE How to Use
 			if(X!=0 && Y!=0){
 				--useCount;
 				XplusY+=X+Y;
@@ -38,8 +38,8 @@ void consumeXY () {
 				Y = 0;
 				cout << "XplusY " << XplusY << '\n';
 			}
-			m1.unlock();
-			m2.unlock();
+			m1.unlock();  // <---------------------- NOTE How to Use
+			m2.unlock();  // <---------------------- NOTE How to Use
 			if(useCount == 0) break;
 		}
 	}
