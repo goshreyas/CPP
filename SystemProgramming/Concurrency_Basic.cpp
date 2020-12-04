@@ -7,6 +7,8 @@ Get Thread ID:
 std::thread::id this_id = std::this_thread::get_id();
 std::cout << "thread " << this_id << "\n";
 
+Ref: https://en.cppreference.com/w/cpp/thread/get_id
+
 //====================================================================================================
 Create Thread:
 
