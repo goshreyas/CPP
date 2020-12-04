@@ -1,12 +1,5 @@
 
 
-Go For Sleep:
-std::this_thread::sleep_for(std::chrono::seconds(1));
-
-Get Thread ID:
-std::thread::id this_id = std::this_thread::get_id();
-std::cout << "thread " << this_id << " sleeping...\n";
-
 //======================================<Code Block(S)>======================================
 
 #include<bits/stdc++.h>
@@ -69,5 +62,7 @@ srb-go3@slave-node:~/dev_space/CPP_concurrency$
 
 
 Ref:
+https://www.youtube.com/watch?v=rKGq9AlfPR4&list=PLk6CEY9XxSIAeK-EAh3hB4fgNvYkYmghp&index=17
+
 
 
