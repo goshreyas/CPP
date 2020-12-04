@@ -22,19 +22,19 @@ mutex mtx1, mtx2;
 
 void increaseCountBy100000Times_try_lock() {
 	for(int i=0; i<100000; i++) {
-		if(mtx1.try_lock()) 
+		if(mtx1.try_lock()) 	//  <-------------------------------- NOTE The use of try_lock()
 		{
 			++cnt_try_lock;
-			mtx1.unlock();
+			mtx1.unlock();  //  <-------------------------------- NOTE The use of unlock()
 		}
 	}
 }
 
 void increaseCountBy100000Times_lock() {
 	for(int i=0; i<100000; i++) {
-		mtx2.lock();
+		mtx2.lock();		 //  <-------------------------------- NOTE The use of lock()
 		++cnt_lock;
-		mtx2.unlock();
+		mtx2.unlock();  	//  <-------------------------------- NOTE The use of unlock()
 	}
 }
 
