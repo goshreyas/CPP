@@ -16,7 +16,7 @@ using namespace std;
 class join_threads
 {
 	std::vector<std::thread>& threads;
-	public:
+public:
 	explicit join_threads(std::vector<std::thread>& threads_): threads(threads_)
 	{}
 	~join_threads()
