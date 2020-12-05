@@ -124,7 +124,11 @@ class thread_pool {
 			cout << "Thread Create Count: " << thread_count << endl;
 			for(unsigned i=0; i<thread_count; ++i)
 			{
-				threads.push_back(std::thread(&thread_pool::worker_thread, this));
+				//threads.push_back(std::thread(&thread_pool::worker_thread, this));
+				//thread thr(std::thread(&thread_pool::worker_thread, this));
+				thread thr = thread(&thread_pool::worker_thread, this);
+				threads.push_back(std::move(thr));
+				//threads.push_back(thr); // This is not working
 			}
 		}
 		catch(...)
