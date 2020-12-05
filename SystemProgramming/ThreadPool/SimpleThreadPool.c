@@ -172,12 +172,21 @@ int main()
 
 
 /*
-Testing:
+Try on: https://coliru.stacked-crooked.com/
+Code: https://coliru.stacked-crooked.com/a/bc030f6cedc6d575
 
+Testing:
 srb-go3@slave-node:~/dev_space/CPP_concurrency$ g++ -std=c++11 -pthread -g simple_thread_pool.cpp
 srb-go3@slave-node:~/dev_space/CPP_concurrency$
 
 srb-go3@slave-node:~/dev_space/CPP_concurrency$ ./a.out
+Thread Create Count: 4
+200
+100
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ 
+
+
+srb-go3@slave-node:~/dev_space/CPP_concurrency$ g++ -std=c++17 -O2 -Wall -pedantic -pthread simple_thread_pool.cpp && ./a.out
 Thread Create Count: 4
 200
 100
