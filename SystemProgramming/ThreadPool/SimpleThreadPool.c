@@ -11,7 +11,8 @@ Ref: https://livebook.manning.com/book/c-plus-plus-concurrency-in-action/chapter
 //#include <iostream>
 using namespace std;
 
-//=============================================================================
+//----------------------------------------------------
+
 class join_threads
 {
 	std::vector<std::thread>& threads;
@@ -28,7 +29,8 @@ class join_threads
 	}
 };
 
-//=============================================================================
+//----------------------------------------------------
+
 // thread-safe queue
 template<typename T>
 class threadsafe_queue
@@ -90,9 +92,9 @@ class threadsafe_queue
 		}
 };
 
-//=============================================================================
-// The simplest possible thread pool
+//----------------------------------------------------
 
+// The simplest possible thread pool
 class thread_pool {
 	std::atomic_bool done;
 	threadsafe_queue<std::function<void()>> work_queue;
@@ -142,8 +144,8 @@ class thread_pool {
 		}
 };
 
-//=============================================================================
-
+//----------------------------------------------------
+// main(): Driver Code
 
 void print_nums_100()
 {
@@ -157,8 +159,6 @@ void print_nums_200()
 	std::cout << 200 << endl;
 }
 
-
-
 int main()
 {
 	thread_pool pool;
@@ -170,6 +170,7 @@ int main()
 	return 0;
 }
 
+//----------------------------------------------------
 
 /*
 Try on: https://coliru.stacked-crooked.com/
