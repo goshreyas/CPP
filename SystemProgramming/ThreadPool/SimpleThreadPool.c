@@ -1,5 +1,6 @@
 
 
+Ref: https://livebook.manning.com/book/c-plus-plus-concurrency-in-action/chapter-9/98
 
 //=============================================<Siurce Code(S)>=============================================
 // The simplest possible thread pool
