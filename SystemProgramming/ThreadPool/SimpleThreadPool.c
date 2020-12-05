@@ -26,12 +26,12 @@ class thread_pool {
 public:
     thread_pool(): done(false), joiner(threads)
     {
-        unsigned const thread_count=std::thread::hardware_concurrency();
+        unsigned const thread_count = std::thread::hardware_concurrency();
         try
         {
-            for(unsigned i=0;i<thread_count;++i)
+            for(unsigned i=0; i<thread_count; ++i)
             {
-                threads.push_back( std::thread(&thread_pool::worker_thread, this));
+                threads.push_back(std::thread(&thread_pool::worker_thread, this));
             }
         }
         catch(...)
