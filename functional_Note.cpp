@@ -40,6 +40,9 @@ int main()
 /*
 Try on: https://coliru.stacked-crooked.com/
 
+Code: https://coliru.stacked-crooked.com/a/ef972ae8416605f3
+
+
 Testing:
 #> g++ -std=c++17 -O2 -Wall -pedantic -pthread main.cpp && ./a.out
 
