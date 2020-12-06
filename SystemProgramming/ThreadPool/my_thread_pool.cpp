@@ -5,9 +5,9 @@
 //======================================<Code Block(S)>======================================
 
 //#include<bits/std++.h>
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>          	//<------------ Mistake#1: wrong key std++ -> stdc++
 //use namespece std;
-using namespace std;
+using namespace std;          		//<------------ Mistake#2: wrong key use -> using
 
 class my_thread_pool {
 private:
@@ -17,14 +17,14 @@ private:
     mutex mtx;
     condition_variable cv;
 
-    void pool_job1() { // Issue: Thread never End.
+    void pool_job1() { // Issue: Thread never End.	//<------------ Mistake#3: The Execuation Never End, Thread will be on waiting for Ever.
         while(!done) {
             function<void()> work;
             unique_lock<mutex> locker(mtx);
             cv.wait(locker, [this](){return (jobs.size()>0);});
             work = jobs.front();
             jobs.pop();
-            //cv.unlock();
+            //cv.unlock();	//<------------ Mistake#3: unlock will not work on condition_variable.
             locker.unlock();
             cv.notify_all();
             work();
@@ -49,7 +49,7 @@ private:
                 work();
             } else{
                 //this_thread::yeild();
-                this_thread::yield();
+                this_thread::yield();		//<------------ Mistake#4: yeild() -> yield()
             }
         }
     }
@@ -88,12 +88,12 @@ public:
         cv.notify_all();
         jobs.push(functionTask);
     }
-};
+};			//<------------ Mistake#: Missed semicolon ";"
 
 void job1() {
     cout << "Job1 InProgress\n";
     //this_thread::sleep();  // ?
-    this_thread::sleep_for(chrono::seconds(2));
+    this_thread::sleep_for(chrono::seconds(2));  			//<------------ NOTE the Uses of this_thread::sleep_for(chrono::seconds(1));
     cout << "Job1 Completed\n";
     return;
 }
