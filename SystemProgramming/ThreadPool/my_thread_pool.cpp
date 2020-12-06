@@ -57,8 +57,8 @@ private:
 public:
 	my_thread_pool(): done(false) {
 		//int max_threads = thread::hardware_synchronization();   // ??
-		int max_threads = thread::hardware_concurrency();
-		try
+		int max_threads = thread::hardware_concurrency();  // <--------------- NOTE The syntax of thread::hardware_concurrency();
+		try						// Mistake#5:  How to use try & catch()
 		{
 			for(int i=0; i<max_threads; i++)
 			{
@@ -81,7 +81,7 @@ public:
         }
     }
     //template<datatype F>   // ??
-    template<typename F>   // ??
+    template<typename F>   // ??		// <--------------- NOTE The syntax of typename
     void schedule_jobs(F functionTask) {
         //lock_block<mutex> lock(mtx);
         lock_guard<mutex> lock(mtx);
