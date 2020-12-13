@@ -15,9 +15,14 @@ void run(int count) {
 
 
 int main() {
-	thread t1(run, 1000);
+	thread t1(run, 20);
 	cout << "main()" << endl;
 	t1.detach();
+	//t1.detach(); // Don't call detach() multiple times
+	if(t1.joinable())
+		t1.detach();
+	if(t1.joinable())
+		t1.join();
 	cout << "main() after" << endl;
 	return 0;
 }
