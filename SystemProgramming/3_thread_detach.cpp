@@ -18,8 +18,8 @@ int main() {
 	thread t1(run, 20);
 	cout << "main()" << endl;
 	t1.detach();
-	//t1.detach(); // Don't call detach() multiple times
-	if(t1.joinable())
+	//t1.detach();       // NOTE: Don't call detach() multiple times, use joinable() as precautionary measures
+	if(t1.joinable())    // NOTE: joinable() before detach()
 		t1.detach();
 	if(t1.joinable())
 		t1.join();
