@@ -51,9 +51,9 @@ srb-go3@slave-node:~/dev_space/CPP_concurrency$
 using namespace std;
 
 void run(int count) {
-	cout<< "\nMy ID: " << this_thread::get_id() << endl;
+	cout<< "\nMy ID: " << this_thread::get_id() << endl; // NOTE: use of get thread id
 	cout<< "\nGoing to Sleep for :" << count << " seconds";
-	this_thread::sleep_for(chrono::seconds(count));
+	this_thread::sleep_for(chrono::seconds(count));     // NOTE: use of sleep
 	cout<< "\nAfter Sleeping for :" << count << " seconds";
 }
 
