@@ -9,7 +9,8 @@ std::mutex mu;
 std::condition_variable cond;
 deque<int> buffer;
 const unsigned int maxBufferSize = 50;
-bool done = false;
+//bool done = false;
+atomic_bool done = false;
 
 void producer(int val) {
 	std::thread::id my_id = std::this_thread::get_id(); // Get Thread ID
