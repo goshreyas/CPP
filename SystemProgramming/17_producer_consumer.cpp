@@ -33,8 +33,10 @@ void consumer() {
 	while (done == false) {
 		std::unique_lock<std::mutex> locker(mu);
 		cond.wait(locker, [](){return buffer.size()>0;}); 
-		int val = buffer.back();
-		buffer.pop_back(); 
+		//int val = buffer.back();
+		//buffer.pop_back();
+		int val = buffer.front();
+		buffer.pop_front();
 		cout << "Consumed: " << val << endl;
 		//locker.unlock(); 
 		//cond.notify_all();
