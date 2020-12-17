@@ -21,9 +21,9 @@ void depositMoney(int amount) {
 void withdrawMoney1(int amount) {
 	unique_lock<mutex> lock(mtx);
 	int bal = balance;
-	//cv.wait(lock, [&amount] () {return (balance >= amount);});  // Working
-	//cv.wait(lock, [&amount, &bal] () {return (bal >= amount);}); // Working
-	cv.wait(lock, [&amount, &bal] {return (bal >= amount);}); // Working
+	//cv.wait(lock, [&amount] () {return (balance >= amount);});  // Working  : NOTE How parameter passed
+	//cv.wait(lock, [&amount, &bal] () {return (bal >= amount);}); // Working  : NOTE How parameter passed
+	cv.wait(lock, [&amount, &bal] {return (bal >= amount);}); // Working  : NOTE How parameter passed
 	balance -= amount;
 	cout << "Curent Balance: " << balance << endl;
 	return;
