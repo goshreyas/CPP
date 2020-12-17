@@ -11,12 +11,12 @@ int buffer = 0;
 
 void task(const char* threadNumber, int loopFor) {
 	//mtx.lock();
-    lock_guard<mutex> lock(mtx);
+    lock_guard<mutex> lock(mtx);  // This is same as mutex lock
 	for(int i=0; i<loopFor; i++) {
 		buffer++;
 		cout << threadNumber << buffer << endl;
 	}
-	//lock.unlock(); This will not work for lock_guard, but will work for unique_lock
+	//lock.unlock(); // <-------------- NOTE This will not work for lock_guard, but will work for unique_lock
 	//mtx.unlock();
 }
 
