@@ -2,7 +2,6 @@
 
 
 //======================================<Code Block(S)>======================================
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -15,8 +14,9 @@ void thread_function(string s)
 int main()
 {
     std::string s = "Shreyas B ";
-    //std::thread t(&thread_function, std::move(s));  // Working
-    std::thread t(&thread_function, s);
+    //std::thread t(&thread_function, std::move(s));  // Working, Note the use of move()
+    //std::thread t(&thread_function, s);  // Working. Note the use of &
+    std::thread t(thread_function, s);
     std::cout << "main thread message = " << s << std::endl;
 
     std::cout << "main thread id = " << std::this_thread::get_id() << std::endl;
@@ -25,7 +25,6 @@ int main()
     t.join();
     return 0;
 }
-
 //======================================<Code Block(E)>======================================
 
 
