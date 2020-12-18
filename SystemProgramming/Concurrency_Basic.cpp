@@ -16,7 +16,15 @@ Ref: https://en.cppreference.com/w/cpp/thread/get_id
 Ref: https://www.bogotobogo.com/cplusplus/C11/1_C11_creating_thread.php
 
 //====================================================================================================
+How many threads?
+cout << std::thread::hardware_concurrency();
+
+Ref: https://www.bogotobogo.com/cplusplus/C11/1_C11_creating_thread.php
+
+//====================================================================================================
 Create Thread:
+
+
 
 
 
