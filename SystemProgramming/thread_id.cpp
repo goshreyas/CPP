@@ -25,6 +25,12 @@ int main()
     t.join();
     return 0;
 }
+
+/*
+Code Ref: for the use of ref()
+    https://github.com/goshreyas/CPP/blob/master/SystemProgramming/2_different_type_create_thread.cpp#L40
+*/
+
 //======================================<Code Block(E)>======================================
 
 
