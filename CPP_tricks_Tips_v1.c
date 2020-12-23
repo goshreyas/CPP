@@ -28,14 +28,17 @@ int main()
 ---------------------------------------------------------------------------------------------------
 Tips#4:
 Define mySort() inside the class:
-	• https://leetcode.com/problems/course-schedule-iii/submissions/
-	• https://leetcode.com/problems/reorder-data-in-log-files/submissions/
-https://leetcode.com/submissions/detail/429993485/
-https://leetcode.com/submissions/detail/433754238/
+- https://leetcode.com/problems/course-schedule-iii/submissions/
+- https://leetcode.com/problems/reorder-data-in-log-files/submissions/
+- https://leetcode.com/submissions/detail/429993485/
+- https://leetcode.com/submissions/detail/433754238/
 
 ---------------------------------------------------------------------------------------------------
-
-
+Tips#5:
+keep "vector<vector<int>> next_land{{-1,0}, {0,-1}, {0, 1}, {1,0}};" inside class
+Ref:
+- https://leetcode.com/problems/number-of-islands/
+- https://leetcode.com/submissions/detail/433668870/
 
 ---------------------------------------------------------------------------------------------------
 
