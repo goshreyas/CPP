@@ -4,6 +4,12 @@ Find max of k num:
     m = max({n1, n2, n3, ... nk});
     Ref: 
 
+
+#include<algorithm>
+   vector <int> v;
+ - int smallest_element = *min_element(v.begin(),v.end());
+ - int largest_element  = *max_element(v.begin(),v.end());
+
 ---------------------------------------------------------------------------------------------------
 Tips#2:
 auto it = find()
