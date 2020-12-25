@@ -33,6 +33,10 @@ Define mySort() inside the class:
 - https://leetcode.com/submissions/detail/429993485/
 - https://leetcode.com/submissions/detail/433754238/
 
+Use lambda function in custom sorting:
+- https://leetcode.com/problems/top-k-frequent-words/submissions/
+- https://leetcode.com/problems/set-intersection-size-at-least-two/
+
 ---------------------------------------------------------------------------------------------------
 Tips#5:
 keep "vector<vector<int>> next_land{{-1,0}, {0,-1}, {0, 1}, {1,0}};" inside class
@@ -52,10 +56,7 @@ Ref: https://leetcode.com/problems/reverse-integer/
 
 
 ---------------------------------------------------------------------------------------------------
-Tips#6: lambda function in custom sorting
 
-https://leetcode.com/problems/top-k-frequent-words/submissions/
-https://leetcode.com/problems/set-intersection-size-at-least-two/
 
 
 ---------------------------------------------------------------------------------------------------
