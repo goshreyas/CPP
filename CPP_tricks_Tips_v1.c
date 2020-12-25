@@ -52,7 +52,10 @@ Ref: https://leetcode.com/problems/reverse-integer/
 
 
 ---------------------------------------------------------------------------------------------------
+Tips#6: lambda function in custom sorting
 
+https://leetcode.com/problems/top-k-frequent-words/submissions/
+https://leetcode.com/problems/set-intersection-size-at-least-two/
 
 
 ---------------------------------------------------------------------------------------------------
