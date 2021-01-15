@@ -9,6 +9,7 @@ Find max of k num:
    vector <int> v;
  - int smallest_element = *min_element(v.begin(),v.end());
  - int largest_element  = *max_element(v.begin(),v.end());
+Ref: https://leetcode.com/problems/count-square-submatrices-with-all-ones/
 
 ---------------------------------------------------------------------------------------------------
 Tips#2:
