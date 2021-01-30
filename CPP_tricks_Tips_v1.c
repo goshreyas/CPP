@@ -69,6 +69,11 @@ Overflow Check
 if (result > INT_MAX / 10 || (result == INT_MAX / 10 && str[i] - '0' > INT_MAX % 10))
 
 Ref: https://leetcode.com/problems/string-to-integer-atoi/
+
+Value of INT_MAX is +2147483647
+Value of INT_MIN is -2147483648
+    
+int modulo = 1e10+7; // 10000000007
 ---------------------------------------------------------------------------------------------------
 
 
