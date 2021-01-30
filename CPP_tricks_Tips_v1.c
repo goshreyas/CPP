@@ -73,7 +73,8 @@ Ref: https://leetcode.com/problems/string-to-integer-atoi/
 Value of INT_MAX is +2147483647
 Value of INT_MIN is -2147483648
     
-int modulo = 1e10+7; // 10000000007
+int modulo = 1e10+7; // 10000000007  == 𝑒10+7
+
 ---------------------------------------------------------------------------------------------------
 
 
