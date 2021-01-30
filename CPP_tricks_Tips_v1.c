@@ -65,8 +65,10 @@ int overflow = INT_MAX; // NOTE
 
 Ref: https://leetcode.com/problems/reverse-integer/
 
+Overflow Check
+if (result > INT_MAX / 10 || (result == INT_MAX / 10 && str[i] - '0' > INT_MAX % 10))
 
-
+Ref: https://leetcode.com/problems/string-to-integer-atoi/
 ---------------------------------------------------------------------------------------------------
 
 
