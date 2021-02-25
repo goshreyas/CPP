@@ -87,6 +87,7 @@ https://leetcode.com/problems/kth-largest-element-in-an-array/
 Log:
  - Length of the base 10 num: log10(N)+1
  - Length of the base 2 num: log2(N)+1
+Ref: https://leetcode.com/problems/armstrong-number/
 
 ---------------------------------------------------------------------------------------------------
 
