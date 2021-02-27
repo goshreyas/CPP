@@ -198,13 +198,6 @@ srb-go3@slave-node:~/dev_space/CPP_concurrency$
 //=============================================<Siurce Code(E)>=============================================
 
 
-random_shuffle()
-https://leetcode.com/problems/guess-the-word/
-
-
-next_permutation()
-https://leetcode.com/problems/24-game/
-
 
 
 
