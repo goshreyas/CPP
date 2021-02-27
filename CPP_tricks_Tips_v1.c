@@ -91,7 +91,12 @@ Ref: https://leetcode.com/problems/armstrong-number/
 
 ---------------------------------------------------------------------------------------------------
 
+random_shuffle()
+https://leetcode.com/problems/guess-the-word/
 
+
+next_permutation()
+https://leetcode.com/problems/24-game/
 
 ---------------------------------------------------------------------------------------------------
 
