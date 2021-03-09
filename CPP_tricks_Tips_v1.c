@@ -102,6 +102,7 @@ https://leetcode.com/problems/24-game/
 
 Segment tree
 https://leetcode.com/problems/range-sum-query-mutable/solution/
-
+Fenwick Tree or Binary Indexed Tree:
+https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/
 
 ---------------------------------------------------------------------------------------------------
