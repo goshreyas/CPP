@@ -106,3 +106,11 @@ Fenwick Tree or Binary Indexed Tree:
 https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/
 
 ---------------------------------------------------------------------------------------------------
+
+Circular Array:
+ - Next Idx: (num + 1 + N) % N;
+ - Prev Idx: (num - 1 + N) % N;
+
+Ref: https://leetcode.com/problems/open-the-lock/
+---------------------------------------------------------------------------------------------------
+
