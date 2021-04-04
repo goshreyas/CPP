@@ -112,5 +112,6 @@ Circular Array of size N:
  - Prev Idx: (num - 1 + N) % N;
 
 Ref: https://leetcode.com/problems/open-the-lock/
+https://leetcode.com/problems/design-circular-queue/
 ---------------------------------------------------------------------------------------------------
 
