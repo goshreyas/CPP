@@ -118,6 +118,7 @@ Initialize Array
 
 int dp[50001] = {[0 ... 50000] = INT_MIN};
 
+Ref: https://leetcode.com/problems/stone-game-iii/discuss/564261/C%2B%2B-Top-Down-DP
 ---------------------------------------------------------------------------------------------------
 
 
