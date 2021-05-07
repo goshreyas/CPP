@@ -120,6 +120,7 @@ Zero initialization:
 int dp[50001] = {[0 ... 50000] = INT_MIN};
 int MEM[501][501] = {[0 ... 500][0 ... 500] = 0};
 
+https://leetcode.com/submissions/detail/490143361/
 Ref: https://leetcode.com/problems/stone-game-iii/discuss/564261/C%2B%2B-Top-Down-DP
 ---------------------------------------------------------------------------------------------------
 
