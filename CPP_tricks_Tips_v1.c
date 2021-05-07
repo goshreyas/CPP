@@ -114,9 +114,11 @@ Circular Array of size N:
 Ref: https://leetcode.com/problems/open-the-lock/
 https://leetcode.com/problems/design-circular-queue/
 ---------------------------------------------------------------------------------------------------
-Initialize Array
+Array Initialization:
 
+Zero initialization:
 int dp[50001] = {[0 ... 50000] = INT_MIN};
+int MEM[501][501] = {[0 ... 500][0 ... 500] = 0};
 
 Ref: https://leetcode.com/problems/stone-game-iii/discuss/564261/C%2B%2B-Top-Down-DP
 ---------------------------------------------------------------------------------------------------
