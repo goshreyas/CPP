@@ -125,4 +125,8 @@ Ref: https://leetcode.com/problems/stone-game-iii/discuss/564261/C%2B%2B-Top-Dow
 ---------------------------------------------------------------------------------------------------
 
 
+unordered_map()
+reserve()
+https://leetcode.com/problems/smallest-sufficient-team/submissions/
+---------------------------------------------------------------------------------------------------
 
