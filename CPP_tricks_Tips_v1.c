@@ -130,3 +130,7 @@ reserve()
 https://leetcode.com/problems/smallest-sufficient-team/submissions/
 ---------------------------------------------------------------------------------------------------
 
+use cout as sprintf()
+https://leetcode.com/problems/ambiguous-coordinates/submissions/
+---------------------------------------------------------------------------------------------------    
+
