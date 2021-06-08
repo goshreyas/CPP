@@ -48,7 +48,8 @@ Define mySort() inside the class:
 Use lambda function in custom sorting:
 - https://leetcode.com/problems/top-k-frequent-words/submissions/
 - https://leetcode.com/problems/set-intersection-size-at-least-two/
-
+- https://leetcode.com/problems/sort-array-by-increasing-frequency/discuss/1023983/C%2B%2B-beats-95
+- https://leetcode.com/problems/sort-array-by-increasing-frequency/
 ---------------------------------------------------------------------------------------------------
 Tips#5:
 keep "vector<vector<int>> next_land{{-1,0}, {0,-1}, {0, 1}, {1,0}};" inside class
