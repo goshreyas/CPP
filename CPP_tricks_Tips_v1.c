@@ -130,12 +130,21 @@ unordered_map()
 reserve()
 https://leetcode.com/problems/smallest-sufficient-team/submissions/
 ---------------------------------------------------------------------------------------------------
-
 use cout as sprintf()
 https://leetcode.com/problems/ambiguous-coordinates/submissions/
----------------------------------------------------------------------------------------------------    
+
+---------------------------------------------------------------------------------------------------
 priority_queue using tuple:
 typedef tuple<int,int,int> ti;
 
 https://leetcode.com/problems/cheapest-flights-within-k-stops/discuss/115541/JavaC%2B%2BPython-Priority-Queue-Solution
+
+
+---------------------------------------------------------------------------------------------------
+string_view()
+https://leetcode.com/problems/distinct-echo-substrings/submissions/
+
+
+---------------------------------------------------------------------------------------------------
+
 
