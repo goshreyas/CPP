@@ -146,5 +146,8 @@ https://leetcode.com/problems/distinct-echo-substrings/submissions/
 
 
 ---------------------------------------------------------------------------------------------------
+new/delete
+https://leetcode.com/problems/remove-linked-list-elements/submissions/
 
+---------------------------------------------------------------------------------------------------
 
