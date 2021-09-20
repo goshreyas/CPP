@@ -114,7 +114,7 @@ Circular Array of size N:
 
 Ref: https://leetcode.com/problems/open-the-lock/
 https://leetcode.com/problems/design-circular-queue/
-https://leetcode.com/problems/distinct-subsequences-ii/
+https://leetcode.com/problems/distinct-subsequences-ii/   (res = (res * 2 % MOD - end[c - 'a'] + MOD) % MOD;)
 ---------------------------------------------------------------------------------------------------
 Array Initialization:
 
