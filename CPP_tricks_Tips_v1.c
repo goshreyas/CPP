@@ -160,6 +160,10 @@ https://leetcode.com/problems/design-a-leaderboard/submissions/
 
 ---------------------------------------------------------------------------------------------------
 
+rotate(): http://www.cplusplus.com/reference/algorithm/rotate/
 
+https://leetcode.com/problems/circular-permutation-in-binary-representation/submissions/
+
+---------------------------------------------------------------------------------------------------
 
 
