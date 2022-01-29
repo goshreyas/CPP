@@ -76,6 +76,9 @@ Value of INT_MIN is -2147483648
     
 int modulo = 1e9+7; // 1000000007  == 1𝑒9+7
 
+
+https://www.geeksforgeeks.org/climits-limits-h-cc/
+
 ---------------------------------------------------------------------------------------------------
 
 nth_element(): http://www.cplusplus.com/reference/algorithm/nth_element/
