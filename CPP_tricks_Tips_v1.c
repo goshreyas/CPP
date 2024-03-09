@@ -44,6 +44,8 @@ E.g. Uses
 // To decrease computation time
 static int fast_io = []() { std::ios::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr); return 0; }();
 
+static int fast_io = []() { ios::sync_with_stdio(0); cin.tie(0); cout.tie(0); return 0; }();
+
 E.g. Uses
 1. https://leetcode.com/problems/count-nodes-equal-to-sum-of-descendants/description/
 
