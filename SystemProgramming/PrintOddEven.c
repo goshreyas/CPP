@@ -1,7 +1,7 @@
 https://stackoverflow.com/questions/22004690/print-odd-and-even-numbers-using-2-threads-using-mutex-in-c
 
 
-
+// multi-threaded odd-even number printing in C
 
 #include <stdio.h>
 #include <stdlib.h>
