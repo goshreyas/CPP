@@ -1,3 +1,65 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+mutex mtx;
+condition_variable cv;
+int odd = 1;  // initialized before threads — but still, access only under lock!
+
+int printNum = 1;
+
+void printOdd(int num) {
+    while(printNum < num) {
+        unique_lock<mutex> lock(mtx);
+        cv.wait(lock, []{return (printNum%2 == 1);});
+        cout << "printOdd() Num: " << printNum << '\n' << flush;
+        printNum++;
+        //cv.notify_all();
+        cv.notify_one();  // notify_one is enough (only one waiter expected)
+    }
+}
+
+void printEven(int num) {
+    while(printNum < num) {
+        unique_lock<mutex> lock(mtx);
+        cv.wait(lock, []{return (printNum%2 == 0);});
+        cout << "printEven() Num: " << printNum << '\n' << flush;
+        printNum++;
+        //cv.notify_all();
+        cv.notify_one();  // notify_one is enough (only one waiter expected)
+    }
+}
+
+int main() {
+    int N = 10;
+
+    thread t1(printOdd, N);
+    thread t2(printEven, N);
+    
+    t1.join();
+    t2.join();
+    return 0;
+}
+
+
+-----------------------------------------------------------------
+printOdd() Num: 1
+printEven() Num: 2
+printOdd() Num: 3
+printEven() Num: 4
+printOdd() Num: 5
+printEven() Num: 6
+printOdd() Num: 7
+printEven() Num: 8
+printOdd() Num: 9
+printEven() Num: 10
+
+
+
+
+
+====================================================================================================
+
 srb-go3@slave-node:~/system_programming$ cat print_odd_even.cpp
 #include<bits/stdc++.h>
 #include<thread>
