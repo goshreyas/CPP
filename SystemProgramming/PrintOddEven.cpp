@@ -1,3 +1,59 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+mutex mtx;
+condition_variable cv;
+
+int maxNUM = 10;
+int printNum = 1;
+
+void printOdd() {
+    while(printNum < maxNUM) {
+        unique_lock<mutex> lock(mtx);
+        cv.wait(lock, []{return (printNum%2==1);});
+    
+        printf("printOdd(): %d\n", printNum);
+        printNum++;
+        cv.notify_all();
+    }
+}
+
+void printEven() {
+    while(printNum < maxNUM) {
+        unique_lock<mutex> lock(mtx);
+        cv.wait(lock, []{return (printNum%2==0);});
+    
+        printf("printEven(): %d\n", printNum);
+        printNum++;
+        cv.notify_all();
+    }
+}
+
+int main() {
+    std::cout<<"Odd Even\n";
+    
+    thread tOdd(printOdd), tEven(printEven);
+    
+    tOdd.join();
+    tEven.join();
+
+    return 0;
+}
+
+-----------------
+Odd Even
+printOdd(): 1
+printEven(): 2
+printOdd(): 3
+printEven(): 4
+printOdd(): 5
+printEven(): 6
+printOdd(): 7
+printEven(): 8
+printOdd(): 9
+printEven(): 10
+
+//======================================================================================================
 
 #include <bits/stdc++.h>
 using namespace std;
