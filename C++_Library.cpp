@@ -11,6 +11,10 @@ https://www.programiz.com/cpp-programming/library-function/cctype/isdigit
     C++ isdigit()
     C++ isblank()
     C++ isalpha()
+-------------------------
+    C++ isblank()
+    C++ ispunct()
+    C++ isspace()
 
 // ===========================================================================================
 
