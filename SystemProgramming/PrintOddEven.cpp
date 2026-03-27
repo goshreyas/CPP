@@ -14,7 +14,7 @@ void printOdd() {
     
         printf("printOdd(): %d\n", printNum);
         printNum++;
-        cv.notify_all();
+        cv.notify_all(); // cv.notify_one();
     }
 }
 
@@ -25,7 +25,7 @@ void printEven() {
     
         printf("printEven(): %d\n", printNum);
         printNum++;
-        cv.notify_all();
+        cv.notify_all(); // cv.notify_one();
     }
 }
 
